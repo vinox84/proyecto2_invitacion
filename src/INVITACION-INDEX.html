@@ -11,112 +11,490 @@
     body{
         margin:0;
     }
-
     .fwh-slide {
+        height: 100vh;
+        block-size: 100vw;
+        padding: 35px;
+    }
+    /*--SECCION 01-INTRO--*/
+    .gridcont-intro{
         height: 100vh;
         block-size: border-box;
         padding: 35px;
-    }
-    .fwh-slide--intro {
-        background: rebeccapurple;
-    }
-    .fwh-slide--inicio {
-        background: rgb(51, 97, 153);
-    }
-    .fwh-slide--padres {
-        background: rgb(51, 151, 153);
-    }
-    .fwh-slide--timeline {
-        background: rgb(51, 153, 75);
-    }
-    .fwh-slide--rsvp {
-        background: rgb(153, 153, 51);
-    }
-    .fwh-slide--regalos {
-        background: rgb(153, 78, 51);
-    }
-    .fwh-slide h1{
         margin: 0;
+        background-color: lightpink;
+        display: grid;
+        grid-template-columns:[col-1] 1fr ;
+        grid-template-rows: 85% 15%;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
+        justify-content: center;
+        grid-template-areas: 
+        "mnsj"
+        "scr";
+    }    
+    .item-intro {
+        grid-area: mnsj;
     }
+
+    .item-indicador {
+        grid-area: scr;
+    }
+    /*--SECCION 02-INICIO--*/
+
+    .gridcont-inicio {
+        height: 100vh;
+        block-size: 100vw;
+        padding: 35px;
+        margin: 0;
+        background-color:goldenrod;
+        display: grid;
+        grid-template-columns:[col-1] 1fr [col-2] 1fr[col-3] 1fr ;
+        grid-template-rows: [row-1] 5% [row-2] 40% [row-3] 25%[row-4] 10%[row-5] 10% [row-6] 10%;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
+        justify-content: center;
+        grid-template-areas: 
+        "mnu mnu mnu"
+        "nva . nvo"
+        "mnsJ mnsj mnsj"
+        "lgr fch hra"
+        "frml . kds"
+        "ctd ctd ctd"
+        ;
+    }
+    .item-menu {
+        grid-area: mnu;
+        }
+    .item-novia {
+        grid-area: nva;
+        }
+
+     .item-novio {
+        grid-area: nvo;
+        }
+
+    .item-mensaje {
+        grid-area: mnsj;
+        }
+
+    .item-lugar {
+        grid-area: lgr;
+        }
+
+    .item-fecha {
+        grid-area: fch;
+        }
+
+    .item-hora {
+        grid-area: hra;
+        }
+
+    .item-formal {
+        grid-area: frml;
+        }
+
+    .item-kids {
+        grid-area: kds;
+        }
+
+    .item-countdown {
+        grid-area: ctd;
+        }
+        
+/*--SECCION 03-PADRES--*/
+.gridcont-padres {
+        height: 100vh;
+        block-size: 100vw;
+        padding: 35px;
+        margin: 0;
+        background-color:lightcoral;
+        display: grid;
+        grid-template-columns:[col-1] 1fr [col-2];
+        grid-template-rows: [row-1]5% [row-2]15% [row-3]32.5%[row-4]15% [row-5]32.5%;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+        grid-template-areas: 
+        "mnu mnu"
+        "msj1 msj1"
+        "pps-nva pps-nvo"
+        "msj2 msj2"
+        "pds-nva pds-nvo";        ;
+    }
+    .item-menu {
+        grid-area: mnu;
+        }
+
+    .item-mensaje1 {
+        grid-area: msj1;
+        }
+
+     .item-padres-novia {
+        grid-area: pps-nva;
+        }
+
+    .item-padres-novio {
+        grid-area: pps-nvo;
+        }
+
+    .item-mensaje2 {
+        grid-area: msj2;
+        }
+
+    .item-padrinos-novia {
+        grid-area: pds-nva;
+        }
+
+    .item-padrinos-novio {
+        grid-area: pds-nvo;
+        }
+
+    /*--SECCION 03-TIMELINE--*/
+    .gridcont-timeline {
+        height: 100vh;
+        block-size: 100vw;
+        padding: 35px;
+        margin: 0;
+        background-color:lightseagreen;
+        display: grid;
+        grid-template-columns:[col-1] 1fr [col-2] 1fr;
+        grid-template-rows: [row-1] 5% [row-2] 45% [row-3] 40%[row-4] 10%;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
+        justify-content: center;
+        grid-template-areas: 
+        "mnu mnu"
+        "fto1 fto2"
+        "info1 info2"
+        "lnk1 lnk2"
+        ;
+    }
+    .item-menu {
+        grid-area: mnu;
+        }
+    .item-fotoceremonia {
+        grid-area: fto1;
+        }
+
+     .item-fotorecepcion {
+        grid-area: fto2;
+        }
+
+    .item-infoceremonia {
+        grid-area: info1;
+        }
+
+    .item-inforecepcion {
+        grid-area: info2;
+        }
+
+    .item-linkceremonia{
+        grid-area: lnk1;
+        }
+
+    .item-linkrecepcion {
+        grid-area: lnk2;
+        }
+
+    /*--SECCION 04-RSVP--*/
+    .gridcont-rsvp {
+        height: 100vh;
+        block-size: 100vw;
+        padding: 35px;
+        margin: 0;
+        background-color:lightsalmon;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns:[col-1] 1fr;
+        grid-template-rows: [row-1] 5% [row-2] 95%;
+        grid-template-areas: 
+        "mnu"
+        "formulario"
+    }
+
+    .item-menu {
+        grid-area: mnu;
+        }
+        
+    .item-formulario {
+        grid-area: formulario;
+        max-width: 550px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        }
+
+    
+    .h2form{
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .field{
+        width: 100%;
+        padding: .5rem .1rem;
+        outline: none;
+        border: 2px solid lightslategrey;
+        background-color: lightgray;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+    }
+    .item-foto{
+        background-color:slateblue no-repeat center;
+        background-size: cover;
+        }
+    .item-registro{
+        padding: 25px 70px;
+        }
+
+    /*--SECCION 05-MESA DE REGALOS--*/
+    .gridcont-regalos {
+        height: 100vh;
+        block-size: 100vw;
+        padding: 35px;
+        margin: 0;
+        background-color:lightskyblue;
+        display: grid;
+        grid-template-columns:[col-1] 1fr [col-2] 1fr;
+        grid-template-rows: [row-1] 5% [row-2] 20% [row-3] 20%[row-4] 55%;
+        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
+        justify-content: center;
+        grid-template-areas: 
+        "mnu mnu"
+        "msjreg msjreg"
+        "icon1 icon2"
+        "info1 info2"
+        ;
+        text-align: center;
+    }
+    .item-menu {
+        grid-area: mnu;
+        }
+    .item-mensajeregalos {
+        grid-area: msjreg;
+        }
+
+     .item-iconmesa {
+        grid-area: icon1;
+        }
+
+    .item-iconsobre {
+        grid-area: icon2;
+        }
+
+    .item-infomesa {
+        grid-area: info1;
+        }
+
+    .item-infosobre{
+        grid-area: info2;
+        }
+
+
 </style>
 <body>
-    <section class="fwh-slide fwh-slide--intro"><!--SECCION 01-INTRO -->
-        <H1>SECCION 01: INTRO</H1>
-        <ul>
-            <li>Sección de bienvenida a la invitación.</li>
-            <li>Diseño tipo sobre cerrado</li>
-            <li>Foto de la pareja</li>
-            <li>Texto "acompáñanos"</li>
-            <li>Indicador de scroll down</li>
-        </ul>  
+    <section class="fwh-slide gridcont-intro"><!--SECCION 01-INTRO -->
+        <div class="item-intro">
+            <H1>MENSAJE INVITACIÓN CERRADA</H1>
+        </div>
+          
+        <div class="item-indicador"><!--INDICADOR SCROLL DOWN -->
+            <a href="#" class="scroll-down">
+                <div class="arrow">
+                    <H2>V</H2>
+                    <span></span>
+                </div>
+            </a>
+        </div>
 
-     <div class="hero"><!--INDICADOR SCROLL DOWN -->
-         <a href="#" class="scroll-down">
-            <div class="arrow">
-                <span></span>
+    </section>
+
+    <section class="fwh-slide gridcont-inicio"><!--SECCION 02-INICIO -->
+        <div class="item-menu">
+            <h3>Menu</h3>
+        </div>
+
+        <div class="item-novia">
+            <h3>NOMBRE NOVIO</h3><br>
+            <p>Apellidos Novio</p>
+        </div>
+
+        <div class="item-novio">
+            <h3>NOMBRE NOVIO</h3><br>
+            <p>Apellidos Novio</p>
+        </div>
+
+        <div class="item-mensaje">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum doloribus temporibus, itaque placeat eos at sequi ipsa repellat laboriosam culpa consectetur mollitia id numquam cum quae dolore pariatur. Odio, atque!</p>
+        </div>
+
+        <div class="item-lugar">
+            <h3>Dirección</h3>
+        </div>
+
+        <div class="item-fecha">
+            <h3>Fecha</h3>
+        </div>
+
+        <div class="item-hora">
+            <h3>Hora</h3>
+        </div>
+
+        <div class="item-formal">
+            <h3>Dress Code</h3>
+        </div>
+
+        <div class="item-kids">
+            <h3>No Niños</h3>
+        </div>
+
+        <div class="item-countdown">
+            <h3>COUNT DOWN DÍAS 24:00:00</h3>
+        </div>
+        
+    </section>
+
+    <section class="fwh-slide gridcont-padres"><!--SECCION 03-PADRESYPADRINOS -->
+        <div class="item-menu">
+            <h3>Menu</h3>
+        </div>
+
+        <div class="item-mensaje1">
+            <h3>MENSAJE PARTICIPANTES PADRES</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="item-padres-novia">
+            <p>Padres de la novia...</p>
+            <h3>Nombres Madre y Nombres Padre</h3>
+            <p>Apellidos Madre y Apellidos Padre</p>
+        </div>
+
+        <div class="item-padres-novio">
+            <p>Padres del novio...</p>
+            <h3>Nombres Madre y Nombres Padre</h3>
+            <p>Apellidos Madre y Apellidos Padre</p>
+        </div>
+
+        <div class="item-mensaje2">
+            <h3>MENSAJE PARTICIPANTES PADRINOS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="item-padrinos-novia">
+            <p>De la novia...</p>
+            <h3>Nombres Padrinos</h3>
+            <p>Apellidos Padrinos</p>
+        </div>
+
+        <div class="item-padrinos-novio">
+            <p>Del novio...</p>
+            <h3>Nombres Padrinos</h3>
+            <p>Apellidos Padrinos</p>
+        </div>
+
+    </section>
+
+    <section class="fwh-slide gridcont-timeline"><!--SECCION 04-TIMELINE -->
+        <div class="item-menu">
+            <h3>Menu</h3>
+        </div>
+
+        <div class="item-fotoceremonia">
+            <h3>FOTO</h3>
+            <p>Del lugar de la Ceremonia</p>
+        </div>
+
+        <div class="item-fotorecepcion">
+            <h3>FOTO</h3>
+            <p>Del lugar de la Recepción</p>
+        </div>
+
+        <div class="item-infoceremonia">
+            <h3>INFORMACIÓN</h3>
+            <p>Del lugar de la Ceremonia</p>
+        </div>
+
+        <div class="item-inforecepcion">
+            <h3>INFORMACIÓN</h3>
+            <p>Del lugar de la Recepción</p>
+        </div>
+
+        <div class="item-linkceremonia">
+            <h3>LINK GOOGLE MAPS</h3>
+            <p>Del lugar de la Ceremonia</p>
+        </div>
+
+        <div class="item-linkrecepcion">
+            <h3>LINK GOOGLE MAPS</h3>
+            <p>Del lugar de la RECEPCIÓN</p>
+        </div>
+        
+    </section>
+
+    <section class="fwh-slide gridcont-rsvp"><!--SECCION 05-RSVP -->
+        <div class="item-menu">
+            <h3>Menu</h3>
+        </div>
+
+        <div class="item-formulario">
+            <div class="foto"></div>
+            <div class=registro>
+                <h2 class="h2form">Registro</h2>
+                <input type="text" class="field" placeholder="Nombre">
+                <input type="text" class="field" placeholder="Apellido">
+                <input type="email" class="field" placeholder="Correo Electrónico">
+                <label for="Asistiré"> Asistiré</label>
+                <input type="checkbox" name="SiAsiste" value="Si">
+                <label for="No Asistiré"> No Asistiré</label>
+                <input type="checkbox" name="NoAsiste" value="No">
+                <button type="submit" value="Submit">Enviar</button>
             </div>
-        </a>
-     </div>
-
-    </section>
-
-    <section class="fwh-slide fwh-slide--inicio"><!--SECCION 02-INICIO -->
-        <H1>SECCION 02: INICIO</H1>
-        <ul>
-            <li>Menu</li>
-            <li>Nombres de los novios.</li>
-            <li>Mensaje de invitación</li>
-            <li>Lugar, Fecha, Horas</li>
-            <li>Countdown</li>
-            <li>Fondo con mismo diseño cohesivo</li>
-        </ul>    
-    </section>
-
-    <section class="fwh-slide fwh-slide--padres"><!--SECCION 03-PADRESYPADRINOS -->
-        <H1>SECCION 03: PADRES Y PADRINOS</H1>
-        <ul>
-            <li>Menu</li>
-            <li>Mensaje: Participan nuestros padres:</li>
-            <li>Nombres de los padres</li>
-            <li>Mensaje: y Padrinos</li>
-            <li>Nombres de los padrinos</li>
-            <li>Diseño de fondo con fotos de los participantes</li>
-            <li>Fondo con mismo diseño cohesivo</li>
-        </ul>    
-    </section>
-
-    <section class="fwh-slide fwh-slide--timeline"><!--SECCION 04-TIMELINE -->
-        <H1>SECCION 04: TIMELINE</H1>
-        <ul>
-            <li>Menu</li>
-            <li>Título cuándo y dónde</li>
-            <li>Mensaje: Te presentamos la información de dónde y a qué hora será cada evento de nuestra boda</li>
-            <li>2 columnas: 1 con foto e info sobre ceremonio, 2 con foto e info sobre recepción</li>
-            <li>Links a Google maps de cada lugar</li>
-            <li>Fondo con mismo diseño cohesivo</li>
-        </ul>    
-    </section>
-
-    <section class="fwh-slide fwh-slide--rsvp"><!--SECCION 05-RSVP -->
-        <H1>SECCION 05: RSVP</H1>
-        <ul>
-            <li>Menu</li>
-            <li>Registro de clientes con Nombre, Apellido, Correo</li>
-            <li>Asistiré o No Asistiré</li>
-            <li>Botón "Registrarme"</li>
-            <li>Dress code, No niños</li>
-            <li>Fondo con mismo diseño cohesivo</li>
-        </ul>    
+        </div>
     </section>
     
-    <section class="fwh-slide fwh-slide--regalos"><!--SECCION 05-MESAREGALOS -->
-        <H1>SECCION 06: MESA DE REGALOS</H1>
-        <ul>
-            <li>Menu</li>
-            <li>Mensaje sobre agradecimiento y opciones</li>
-            <li>2 columnas: 1 opciones de tiendas con nombre y link, 2 opción de regalo alternativa (como sobres)</li>
-            <li>Fondo con mismo diseño cohesivo</li>
-        </ul>    
+    <section class="fwh-slide gridcont-regalos"><!--SECCION 06-MESAREGALOS -->
+        <div class="item-menu">
+            <h3>Menu</h3>
+        </div>
+
+        <div class="item-mensajeregalos">
+            <h3>MENSAJE</h3>
+            <p>Sobre Mesa de Regalos</p>
+        </div>
+
+        <div class="item-iconmesa">
+            <h3>ICONO</h3>
+            <p>Mesa de Regalos</p>
+        </div>
+
+        <div class="item-iconsobre">
+            <h3>ICONO</h3>
+            <p>Sobres de Dinero</p>
+        </div>
+
+        <div class="item-infomesa">
+            <h3>INFORMACIÓN</h3>
+            <p>Links de las diferentes mesas de regalos disponibles</p>
+        </div>
+
+        <div class="item-infosobre">
+            <h3>INFORMACIÓN</h3>
+            <p>Sobre dinámica de sobres de dinero</p>
+        </div>
     </section>
 
 </body>
